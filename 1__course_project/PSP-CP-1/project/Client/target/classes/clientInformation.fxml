@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientInformationController">
+    <children>
+      <TableView fx:id="clientTable" layoutX="39.0" layoutY="99.0" prefHeight="80.0" prefWidth="622.0" style="-fx-border-color: #ff9;">
+         <columns>
+            <TableColumn fx:id="loginColumn" maxWidth="141.33333778381348" prefWidth="71.20001029968262" style="-fx-background-color: #fff; -fx-border-color: #f2f2f2;" text="Логин" />
+            <TableColumn fx:id="firstnameColumn" prefWidth="179.0" style="-fx-background-color: #fff; -fx-border-color: #f2f2f2;" text="Имя" />
+            <TableColumn fx:id="lastnameColumn" prefWidth="167.0" style="-fx-background-color: #fff; -fx-border-color: #f2f2f2;" text="Фамилия" />
+            <TableColumn fx:id="orderAmountColumn" prefWidth="202.0" style="-fx-background-color: #fff; -fx-border-color: #f2f2f2;" text="Количество аренд" />
+         </columns>
+      </TableView>
+      <Label layoutX="227.0" prefHeight="62.0" prefWidth="246.0" text="Личная информация" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="60.0" prefHeight="3.0" prefWidth="700.0" style="-fx-background-color: #а55;" />
+      <AnchorPane layoutY="438.0" prefHeight="70.0" prefWidth="700.0" style="-fx-background-color: #а55;">
+         <children>
+              <Button fx:id="backButton" layoutX="17.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="48.0" prefWidth="38.0" style="-fx-background-color: #f5fbff;" textAlignment="CENTER">
+                  <font>
+                      <Font size="14.0" />
+                  </font>
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/back-button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+              </Button>
+            <Button fx:id="changeButton" layoutX="561.0" layoutY="19.0" mnemonicParsing="false" onAction="#changestud" prefHeight="38.0" prefWidth="95.0" style="-fx-background-color: #а55; -fx-border-color: #ааа; -fx-border-width: 2px; -fx-border-radius: 2px;" text="Изменить" textFill="#171717">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="login" layoutX="510.0" layoutY="216.0" prefHeight="37.0" prefWidth="136.0" promptText="Логин" style="-fx-background-radius: 2px;" />
+      <TextField fx:id="password" layoutX="510.0" layoutY="279.0" prefHeight="37.0" prefWidth="136.0" promptText="Пароль" style="-fx-background-radius: 2px;" />
+      <TextField fx:id="password1" layoutX="510.0" layoutY="330.0" prefHeight="37.0" prefWidth="136.0" promptText="Имя" style="-fx-background-radius: 2px;" />
+      <TextField fx:id="password2" layoutX="510.0" layoutY="386.0" prefHeight="37.0" prefWidth="136.0" promptText="Фамилия" style="-fx-background-radius: 2px;" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DeleteCategoryController">
+    <children>
+        <Label layoutX="30.0" layoutY="98.0" text="Введите название для удаления жанра">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+      <TextField fx:id="name" layoutX="118.0" layoutY="150.0" prefHeight="38.0" prefWidth="164.0" style="-fx-background-radius: 2px;" />
+      <AnchorPane layoutY="68.0" prefHeight="3.0" prefWidth="400.0" style="-fx-background-color: #ff9;" />
+      <Label layoutX="112.0" prefHeight="62.0" prefWidth="226.0" text="Удалить жанр" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="deleteButton" layoutX="118.0" layoutY="219.0" mnemonicParsing="false" onAction="#deleteEquipment" prefHeight="38.0" prefWidth="164.0" style="-fx-background-color: #ааа; -fx-border-color: #а55; -fx-border-width: 2px; -fx-border-radius: 2px;" text="Удалить" textFill="#252526">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

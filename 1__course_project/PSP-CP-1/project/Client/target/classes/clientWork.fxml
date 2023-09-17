@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="400.0" style="-fx-background-color: #ааа;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientWorkController">
+    <children>
+      <AnchorPane layoutY="68.0" prefHeight="3.0" prefWidth="400.0" style="-fx-background-color: #ff9;" />
+      <AnchorPane layoutY="452.0" prefHeight="58.0" prefWidth="400.0" style="-fx-background-color: #ff9;">
+         <children>
+            <Button fx:id="backButton" layoutX="150.0" layoutY="10.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: #ааа; -fx-border-color: #а55; -fx-border-width: 2px; -fx-border-radius: 2px;" text="Назад" textFill="#1a1a1b">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="infClientButton" layoutX="71.0" layoutY="123.0" mnemonicParsing="false" onAction="#infClient" prefHeight="55.0" prefWidth="265.0" style="-fx-background-color: #ff; -fx-border-color: #ааа; -fx-border-radius: 20px; -fx-border-width: 2px;" text="Информация о читателях">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <Label prefHeight="35.0" prefWidth="24.0" text="1." textFill="#141414">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+         </graphic>
+      </Button>
+      <Button fx:id="addClientButton" layoutX="71.0" layoutY="199.0" mnemonicParsing="false" onAction="#addClient" prefHeight="55.0" prefWidth="266.0" style="-fx-background-color: #ff; -fx-border-color: #ааа; -fx-border-radius: 20px; -fx-border-width: 2px;" text="    Добавить читателя">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteClientButton" layoutX="71.0" layoutY="275.0" mnemonicParsing="false" onAction="#deleteClient" prefHeight="55.0" prefWidth="266.0" style="-fx-background-color: #ff; -fx-border-color: #ааа; -fx-border-radius: 20px; -fx-border-width: 2px;" text="  Удалить читателя">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="88.0" layoutY="207.0" prefHeight="35.0" prefWidth="24.0" text="2." textFill="#141414">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="283.0" prefHeight="35.0" prefWidth="24.0" text="3." textFill="#141414">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="21.0" text="Работа с читателями">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
