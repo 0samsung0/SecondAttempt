@@ -68,6 +68,9 @@ public class ErrorMappingsDocGenerator {
             if (fieldName.startsWith("ER_")) {
                 mysqlErrorNumbersToNames.put(possibleFields[i].get(null), fieldName);
             }
+            if(fieldName.startWith("RU_")){
+                break;
+            }
         }
 
         System.out.println("<ErrorMappings>");
